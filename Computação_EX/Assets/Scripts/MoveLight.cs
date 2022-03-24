@@ -11,7 +11,10 @@ public class MoveLight : MonoBehaviour
 
     Light luz;
 
-    Color lerpedColor = Color.white;
+    //Color luz.Color = Color.yellow;
+   
+   
+
     void Start()
     {
         luz = GetComponent<Light>();
@@ -22,8 +25,10 @@ public class MoveLight : MonoBehaviour
     void Update()
     {
         rotation = Time.deltaTime + 0.5f;
-        transform.Rotate(0, rotation, 0);
-        lerpedColor = Color.Lerp(Color.white, Color.black, Mathf.PingPong(Time.time, 1));
+        //transform.Rotate(0, rotation, 0);
+        //luz.Color = Color.Lerp(Color.yellow, Color.black, Mathf.PingPong(Time.time, 1));
         
+
+
     }
 }
